@@ -5,7 +5,7 @@ setup .env.example to .env
 sudo composer install
 ```
 ## env setup
-opem .env thrn uncomment
+opem .env then uncomment
 ```sh
 # MEMCACHED_HOST=memcached
 # CACHE_DRIVER=memcached
