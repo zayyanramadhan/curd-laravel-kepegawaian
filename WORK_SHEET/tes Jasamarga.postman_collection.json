@@ -1,0 +1,489 @@
+{
+	"info": {
+		"_postman_id": "7a6068eb-f560-44f1-89ae-3bcfaf2fed66",
+		"name": "tes Jasamarga",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9346104"
+	},
+	"item": [
+		{
+			"name": "employee get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nik\":\"3254545455455\",\r\n    \"name\":\"M Zayyan R\",\r\n    \"start_date\":\"2021-01-01\",\r\n    \"end_date\":\"2124-01-01\",\r\n    \"created_by\":\"Admin\",\r\n    \"updated_by\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"21\",\r\n    \"nik\":\"3254545455455\",\r\n    \"name\":\"Moch Zayyan Ramadhan\",\r\n    \"start_date\":\"2021-01-01\",\r\n    \"end_date\":\"2124-01-01\",\r\n    \"is_active\":true,\r\n    \"updated_by\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "employee delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employee/education/?id_employee=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"education",
+						""
+					],
+					"query": [
+						{
+							"key": "id_employee",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Education Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\":\"1\",\r\n    \"name\":\"@Mnc4k31903\",\r\n    \"level\":\"Strata 1\",\r\n    \"is_married\":false,\r\n    \"description\":\"@Mnc4k31903\",\r\n    \"created_by\":\"@Mnc4k31903\",\r\n    \"updated_by\":\"@Mnc4k31903\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/education/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"education",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"22\",\r\n    \"employee_id\":\"1\",\r\n    \"name\":\"lalalal\",\r\n    \"level\":\"Strata 1\",\r\n    \"is_married\":false,\r\n    \"description\":\"lalalal\",\r\n    \"updated_by\":\"lalalal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/education/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"education",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "education delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"26\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/education/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"education",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "family get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employee/family/?id_employee=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"family",
+						""
+					],
+					"query": [
+						{
+							"key": "id_employee",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "family create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\":\"1\",\r\n    \"name\":\"Tes 123\",\r\n    \"identifer\":\"3200000000000000\",\r\n    \"job\":\"Swasta\",\r\n    \"place_of_birth\":\"Surabaya\",\r\n    \"date_of_birth\":\"1997-01-01\",\r\n    \"religion\":\"Islam\",\r\n    \"is_life\":true,\r\n    \"is_divorced\":true,\r\n    \"relation_status\":\"Istri\",\r\n    \"created_by\":\"Admin\",\r\n    \"updated_by\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/family/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"family",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "family update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"22\",\r\n    \"employee_id\":\"1\",\r\n    \"name\":\"Tes 123\",\r\n    \"identifer\":\"3200000000000000\",\r\n    \"job\":\"Swasta\",\r\n    \"place_of_birth\":\"Surabaya\",\r\n    \"date_of_birth\":\"1997-01-01\",\r\n    \"religion\":\"Islam\",\r\n    \"is_life\":true,\r\n    \"is_divorced\":true,\r\n    \"relation_status\":\"Suami\",\r\n    \"updated_by\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/family/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"family",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "family delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/family/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"family",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employee/profile/?id_employee=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"profile",
+						""
+					],
+					"query": [
+						{
+							"key": "id_employee",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employee_id\":\"1\",\r\n    \"place_of_birth\":\"Surabaya\",\r\n    \"date_of_birth\":\"1997-01-01\",\r\n    \"gender\":\"Laki-Laki\",\r\n    \"prof_pict\":\"\",\r\n    \"is_married\":false,\r\n    \"created_by\":\"Admin\",\r\n    \"updated_by\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/profile/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"profile",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"21\",\r\n    \"employee_id\":\"1\",\r\n    \"place_of_birth\":\"Jakarta\",\r\n    \"date_of_birth\":\"1997-01-01\",\r\n    \"gender\":\"Laki-Laki\",\r\n    \"prof_pict\":\"\",\r\n    \"is_married\":false,\r\n    \"updated_by\":\"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/profile/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"profile",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "family delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee/profile/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee",
+						"profile",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
