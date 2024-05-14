@@ -1,13 +1,34 @@
 # curd-laravel-kepegawaian
+
+## 1
 ```sh
 cd PROJECT
 ```
-## Start the server
+## 2. env
+setup .env.example to .env
+## 3. composer
+```sh
+sudo composer install
+```
+## 4. env setup
+opem .env thrn uncomment
+```sh
+# MEMCACHED_HOST=memcached
+# CACHE_DRIVER=memcached
+```
+to
+```sh
+MEMCACHED_HOST=memcached
+CACHE_DRIVER=memcached
+```
+
+## 5. Start the server
 ```sh
 sudo ./vendor/bin/sail up
 ```
 
-## Migrations
+## 6. Migrations
+Open new terminal
 ```sh
 # Running up migrations after start the server
 sudo ./vendor/bin/sail artisan migrate:fresh --seed
