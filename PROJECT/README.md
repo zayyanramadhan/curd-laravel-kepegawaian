@@ -1,12 +1,32 @@
+## env
+setup .env.example to .env
+## composer
+```sh
+sudo composer install
+```
+## env setup
+opem .env thrn uncomment
+```sh
+# MEMCACHED_HOST=memcached
+# CACHE_DRIVER=memcached
+```
+to
+```sh
+MEMCACHED_HOST=memcached
+CACHE_DRIVER=memcached
+```
+
 ## Start the server
 ```sh
 sudo ./vendor/bin/sail up
 ```
 
 ## Migrations
+Open new terminal
 ```sh
 # Running up migrations after start the server
 sudo ./vendor/bin/sail artisan migrate:fresh --seed
+```./vendor/bin/sail artisan migrate:fresh --seed
 ```
 
 
