@@ -1,3 +1,23 @@
+-- public.employee definition
+
+-- Drop table
+
+-- DROP TABLE public.employee;
+
+CREATE TABLE public.employee (
+	id bigserial NOT NULL,
+	nik varchar(255) NULL,
+	"name" varchar(255) NULL,
+	is_active bool NOT NULL,
+	start_date date NOT NULL,
+	end_date date NOT NULL,
+	created_by varchar(255) NULL,
+	updated_by varchar(255) NULL,
+	created_at timestamp(0) NULL,
+	updated_at timestamp(0) NULL,
+	CONSTRAINT employee_pkey PRIMARY KEY (id)
+);
+
 -- public.education definition
 
 -- Drop table
@@ -17,26 +37,6 @@ CREATE TABLE public.education (
 	updated_at timestamp(0) NULL,
 	CONSTRAINT education_pkey PRIMARY KEY (id),
 	CONSTRAINT education_employee_fk FOREIGN KEY (employee_id) REFERENCES public.employee(id)
-);
-
--- public.employee definition
-
--- Drop table
-
--- DROP TABLE public.employee;
-
-CREATE TABLE public.employee (
-	id bigserial NOT NULL,
-	nik varchar(255) NULL,
-	"name" varchar(255) NULL,
-	is_active bool NOT NULL,
-	start_date date NOT NULL,
-	end_date date NOT NULL,
-	created_by varchar(255) NULL,
-	updated_by varchar(255) NULL,
-	created_at timestamp(0) NULL,
-	updated_at timestamp(0) NULL,
-	CONSTRAINT employee_pkey PRIMARY KEY (id)
 );
 
 -- public.employee_family definition
